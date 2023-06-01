@@ -29,7 +29,7 @@ driver.implicitly_wait(5)
 
 links = driver.find_elements("xpath", "//a[@href]")
 for link in links:
-if "Kontakte" in link.get_attribute("innerHTML"):
-time.sleep(5)
-link.click()
-break
+    if "Kontakte" in link.get_attribute("innerHTML"):
+    #time.sleep(5)
+        link.click()
+        break
